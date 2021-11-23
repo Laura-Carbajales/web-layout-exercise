@@ -57,6 +57,9 @@
         }
         & .link {
           color: $colorTextHero;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -78,6 +81,9 @@
         }
         & .link {
           color: $colorTextHero;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
