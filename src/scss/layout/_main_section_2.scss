@@ -1,0 +1,107 @@
+.section2 {
+  width: 100%;
+  background-color: #eff9ff;
+  padding: 30px 15px 60px 15px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 184px 1fr;
+  grid-template-rows: 30px 1fr 1fr 1fr 90px;
+  @media all and (min-width: 768px) {
+    padding: 30px 40px 60px 40px;
+    grid-template-columns: 1fr 237px 210px 237px 1fr;
+    grid-template-rows: 45px 1fr 45px;
+  }
+  &__title {
+    font-family: $fontTitle;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: $colorTitleSection;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    @media all and (min-width: 768px) {
+      grid-column: 1/6;
+      grid-row: 1/2;
+    }
+  }
+  &__article {
+    margin-top: 45px;
+    @media all and (min-width: 768px) {
+      margin: 0;
+      padding-top: 45px;
+      padding-bottom: 60px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    &--title {
+      font-family: $fontTitle;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.67;
+      color: $colorTitleSection;
+    }
+    &--text {
+      font-family: $fontText;
+      font-size: 18px;
+      line-height: 1.67;
+      color: $colorTitleSection;
+    }
+    &.first {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      @media all and (min-width: 768px) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-right: 27px;
+      }
+    }
+    &.second {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      @media all and (min-width: 768px) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+    }
+    &.third {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      @media all and (min-width: 768px) {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        padding-left: 27px;
+      }
+    }
+  }
+  &__button {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $colorbutton;
+    border: 1px solid $colorbutton;
+    color: $colorTextHero;
+    font-family: $fontText;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.25;
+    margin-top: 45px;
+    grid-column: 2 / 3;
+    grid-row: 5/6;
+    transition: all 500ms linear;
+    &:hover {
+      color: $colorbutton;
+      background-color: $colorTextHero;
+      border: 1px solid $colorbutton;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    @media all and (min-width: 768px) {
+      margin-top: 0px;
+      width: 210px;
+      grid-column: 3/4;
+      grid-row: 3/4;
+      width: 210px;
+      height: 45px;
+    }
+  }
+}

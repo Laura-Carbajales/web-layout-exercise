@@ -1,0 +1,102 @@
+.footer {
+  background-color: $colorFooter;
+  color: $colorTextHero;
+  padding: 0 15px 45px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    padding: 0 39px 45px 39px;
+  }
+
+  &__button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: $colorTextHero;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    &--link {
+      height: 24px;
+      width: 20.6px;
+      background-image: url(../images/ico-arrow.svg);
+    }
+  }
+  &__container {
+    margin-top: 15px;
+    @media all and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media all and (min-width: 1200px) {
+      justify-content: center;
+    }
+    &--menu {
+      & .list {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $fontText;
+        font-size: 16px;
+        line-height: 1.88;
+        min-width: 210px;
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        @media all and (min-width: 1200px) {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        & .link {
+          color: $colorTextHero;
+        }
+      }
+    }
+    &--social {
+      & .rrss {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $fontText;
+        font-size: 16px;
+        line-height: 1.88;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        min-width: 210px;
+        @media all and (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 0;
+        }
+        & .link {
+          color: $colorTextHero;
+        }
+      }
+    }
+    &--small {
+      font-family: $fontText;
+      font-size: 14px;
+      line-height: 2.14;
+      color: $colorTextHero;
+      text-align: center;
+      min-width: 210px;
+      @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        order: -1;
+      }
+      & .span {
+        color: $colorbutton;
+      }
+    }
+  }
+}

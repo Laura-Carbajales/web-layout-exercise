@@ -27,23 +27,44 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    @media all and (min-width: 768px) {
+      padding: 0 39px 45px 39px;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 0 0 13px 0;
+    }
     &--title {
-      font-family: $fontTitleHero;
+      font-family: $fontTitle;
       font-size: 42px;
       font-weight: bold;
       color: $colorTextHero;
-      text-shadow: 0 2px 3px black;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
       text-transform: uppercase;
       text-align: center;
       line-height: 1.31;
       word-spacing: 100vw;
       margin-bottom: 10px;
+      @media all and (min-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 80px;
+        line-height: 1.33;
+      }
+      @media all and (min-width: 1200px) {
+        max-width: 730px;
+        font-size: 100px;
+        line-height: 1.32;
+        margin-bottom: 0;
+      }
     }
     &--text {
       font-family: $fontText;
       font-size: 16px;
       color: $colorTextHero;
       margin-bottom: 45px;
+      @media all and (min-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
     }
     &--buttom {
       height: 45px;
