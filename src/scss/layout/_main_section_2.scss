@@ -33,7 +33,6 @@
     }
   }
   &__article {
-    // margin-top: 45px;
     @media all and (min-width: 768px) {
       height: 100%;
       width: 100%;
@@ -124,6 +123,8 @@
       grid-column: 3/4;
       grid-row: 3/4;
       width: 210px;
+      margin-left: 50%;
+      transform: translateX(-50%);
     }
     @media all and (min-width: 1200px) {
       width: 255px;
