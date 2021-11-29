@@ -17,9 +17,10 @@
       max-width: 730px;
     }
 
-    &--small {
+    &--sectionName {
       font-family: $fontText;
       font-size: 14px;
+      font-weight: normal;
       color: $colorNameSection;
       line-height: 2.14;
       margin-bottom: 1px;

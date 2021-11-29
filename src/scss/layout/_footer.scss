@@ -21,6 +21,10 @@
     justify-content: center;
     align-items: center;
     transform: translateY(-50%);
+    &:hover {
+      border: 2px solid $colorbutton;
+      background-color: $colorFooter;
+    }
     animation: rebote 0.5s alternate infinite linear;
     @keyframes rebote {
       0% {
